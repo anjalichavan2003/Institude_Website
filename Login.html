@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>login Page</title>
+	<style>
+	#login{
+            width: 400px;
+            height: 450px;
+            background-color: #0288d1;
+            margin-top: 100px;
+            margin-left: 500px;
+            border-radius: 10%;
+            opacity: 0.8;
+        }
+        #img1{
+            width: 130px;
+            margin-left: 135px;
+            margin-top:-50px;
+            border-radius: 90%;
+        }
+        h1{
+            margin-top: 10px;
+            text-align: center;
+            color: black;
+        }
+        #input{
+            margin-left: 110px;
+            margin-top: 10px;
+            padding: 10px;
+            background-color:rgb(164, 184, 212);
+            border-radius:7%;
+        }
+        #forgetPass{
+            margin-left: 110px;
+        }
+        #btn{
+            margin-left: 180px;
+            margin-top: 30px;
+            padding:10px;
+            background-color: darkcyan;
+            border-radius: 7%;
+        }
+
+        #btn:hover{
+            background-color: black;
+            color: white;
+        }
+	</style>
+</head>
+<body>
+	<jsp:include page="header.html"/>
+		<div id="login">
+            <img src="finallogo.png" id="img1">
+            <form action="#" method="post">
+                <h1>Login</h1>
+                <input type="email" placeholder="Email address" required id="input">
+                <input type="password" placeholder=" Password" required id="input">
+                <br>
+                <br>
+                <div id="forgetPass"> Forgot Password ?</div>
+                <input type="submit" value="Login" id="btn">
+            </form>
+        </div>
+	<jsp:include page="footer.html"/>
+	</body>
+</html>
